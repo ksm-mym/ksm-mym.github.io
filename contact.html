@@ -2,76 +2,51 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8" name="みやま自己紹介文"/>
-        
+        <title>Contact</title>
         <!-- スタイルシートCSSファイルの読み込み -->
-        <link rel="stylesheet" href="contact.css"/>
-        
-        <title>about</title>
-        
+        <link rel="stylesheet" href="stylesheet.css"/>
     </head>
-        <body>
-           
-            <div class="wrapper">
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="float1">
+                    <img src="img/logo_200x200.png" alt="" width="140" >
+                </div>
+                <div class="float2">
+                    <div class="bside mr10"><a href="index.html">Top</a></div>
+                    <div class="bside mr10"><a href="about.html">About</a></div>
+                    <div class="bside mr10"><a href="blog.html">Blog</a></div>
+                    <div class="bside ml10"><a href="contact.html">Contact</a></div>
+                </div>
+            </header>
+            <div class="container">    
+                <article>
+                    <form action="/my-handling-form-page" method="post">
+                      <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                      </div>
+                      <div>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_mail">
+                      </div>
+                      <div>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                      </div>
+                        <div class="button">
+                            <button type="submit">メッセージを送信</button>
+                        </div>
+                    </form>
+                </article>
 
-                <header>
-                   <div class="float1">
-                       
-                   </div>
-                        
-                    <div class="float2">
-                        <div class="bside mr10"><a href="about.html">About</a></div>
-                        <div class="bside mr10"><a href="index.html">Works</a></div>
-                        <div class="bside mr10"><a href="blog.html">Blog</a></div>
-                        <div class="bside ml10"><a href="contact.html">Contact</a></div>
-                    </div>
-                    
-                </header>
-                
-               
-               <div class="container">
-                   
-                   <article>
-                       
-                       <form action="送信先URL" method="post">
-                
-                           <h1>Contact</h1>
-                        <p>お名前</p>
-                        <input type="text" name="name" size="38" placeholder="ポリ田 テク子" />
-                   
-                        <p>電話番号</p>
-                        <input type="text" name="phone" placeholder="***-****-****"/>
-                    
-                        <p>Eメール</p>
-                        <td><input type="text" name="mail" /></td>
-               
-                        
-                        <p>内容</p>
-                        <textarea name="detail" cols="50" rows="5"></textarea>
-                           
-                        <input type="submit" value="送信" />
-                   
-                
-                
-                
-            </form>
-                     
-                       
-                   </article>
-               
-                </div><!-- #container -->
-            
-                
-                       
                 <footer>
-                   <a href="https://www.instagram.com/ksm_tkd/?hl=ja"><img src="img/instagram.jpeg" alt="instagram"></a>
-
-                   <p><small>Copyright © 2019 ksm_mym All Rights Reserved.</small></p>
+                    <a href="https://www.instagram.com/ksm_tkd/?hl=ja"><img src="img/instagram.jpeg" alt="instagram"></a>
+                    <p><small>Copyright © 2019 ksm_mym All Rights Reserved.</small></p>
                 </footer>
+            </div><!--container-->
+        </div><!--wrapper-->  
+    </body>
 
-            
-            </div><!-- wrapper -->
-        
-        </body>
-    
-    
+
 </html>
